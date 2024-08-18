@@ -19,3 +19,12 @@ gradle-app.setting
 .project
 # JDT-specific (Eclipse Java Development Tools)
 .classpath
+
+*.jar
+*.iml
+target/
+.idea/
+.vscode/
+/workspace.xml
+out/
+
