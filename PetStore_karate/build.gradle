@@ -3,8 +3,10 @@ plugins {
     id 'idea'
 }
 
-group = 'co.com.petstore'
 version = '1.0-SNAPSHOT'
+
+compileJava.options.encoding = 'UTF-8'
+compileTestJava.options.encoding = 'UTF-8'
 
 repositories {
     mavenCentral()
@@ -12,14 +14,14 @@ repositories {
 
 ext {
     karateVersion = '1.5.0'
-    masterThoughtVersion = '3.8.0'
+    masterThoughtVersion = '5.8.2'
 }
 
 dependencies {
-    testImplementation 'org.junit.jupiter:junit-jupiter'
-    testImplementation 'io.karatelabs:karate-junit5:${karateVersion}'
-    testImplementation 'io.karatelabs:karate-apache:${karateVersion}'
-    testImplementation 'net.masterthought:cucumber-reporting:${masterThoughtVersion}'
+    implementation "io.karatelabs:karate-junit5:${karateVersion}"
+    testImplementation "org.junit.jupiter:junit-jupiter"
+    testImplementation "io.karatelabs:karate-junit5:${karateVersion}"
+    testImplementation "net.masterthought:cucumber-reporting:${masterThoughtVersion}"
 }
 
 sourceSets {
