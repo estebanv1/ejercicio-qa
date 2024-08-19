@@ -21,9 +21,15 @@ Se definen los siguientes 3 escenarios de prueba:
 
 ### Ejecución de pruebas
 
-Es posible ejecutar las pruebas utilizando un IDE o bien, desde el cmd ubicado en la raíz del proyecto con el comando `gradlew clean test --tests "petstore.pets.PetsRunner"`.
+Es posible ejecutar las pruebas utilizando un IDE como Intellij con los plugins Gradle, Cucumber for Java y Karate, ejecutando la clase `src.petstore.pets.PetsRunner.java`, o bien, desde el cmd ubicado en la raíz del proyecto con el comando `gradlew clean test --tests "petstore.pets.PetsRunner"`.
 El otro runner presente en el proyecto es para ejecutar múltiples features y generar el reporte en cucumber.
 
 ### Reportes
 
-Los reportes se encuentran almacenados en las rutas `"C:\Users\esteb\IdeaProjects\ejercicio-qa\PetStore_karate\Documentos de pruebas\karate-reports\karate-report.html"` y `"C:\Users\esteb\Desktop\Nueva carpeta\cucumber-html-reports\Cucumber-report.html"`
+Los reportes se encuentran almacenados en las rutas `"C:\Users\esteb\IdeaProjects\ejercicio-qa\PetStore_karate\Documentos de pruebas\karate-reports\karate-report.html"` y `"C:\Users\esteb\Desktop\Nueva carpeta\cucumber-html-reports\Cucumber-report.html"`.
+
+### Conclusiones
+
+Se genera el archivo de conclusiones en la ruta `"ejercicio-qa\PetStore_karate\Documentos de pruebas"`.
+
+

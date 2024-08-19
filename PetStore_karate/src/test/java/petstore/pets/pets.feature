@@ -47,10 +47,7 @@ Feature: Pet management in the store
   Scenario Outline: Failed pet creation
 
     * if (<petId>) petRequest.id = <petId>
-    * if (<category>) petRequest.category = <category>
     * if ('<petName>' && '<petName>' != "null") petRequest.name = '<petName>'
-    * if (<photoUrls>) petRequest.photoUrls = <photoUrls>
-    * if (<tags>) petRequest.tags = <tags>
     * if ('<petStatus>' && '<petStatus>' != "null") petRequest.status = '<petStatus>'
 
     Given path 'pet'
