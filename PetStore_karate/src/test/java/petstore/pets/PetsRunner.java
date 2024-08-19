@@ -6,6 +6,7 @@ public class PetsRunner {
 
     @Karate.Test
     Karate petsRunner() {
-        return Karate.run("classpath:petstore/pets/pets.feature");
+        return Karate.run("classpath:petstore/pets/pets.feature")//.tags("@PetCreation")
+        ;
     }
 }
