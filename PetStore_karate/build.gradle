@@ -1,0 +1,40 @@
+plugins {
+    id 'java'
+    id 'idea'
+}
+
+version = '1.0-SNAPSHOT'
+
+compileJava.options.encoding = 'UTF-8'
+compileTestJava.options.encoding = 'UTF-8'
+
+repositories {
+    mavenCentral()
+}
+
+ext {
+    karateVersion = '1.5.0'
+    masterThoughtVersion = '5.8.2'
+}
+
+dependencies {
+    implementation "io.karatelabs:karate-junit5:${karateVersion}"
+    testImplementation "org.junit.jupiter:junit-jupiter"
+    testImplementation "io.karatelabs:karate-junit5:${karateVersion}"
+    testImplementation "net.masterthought:cucumber-reporting:${masterThoughtVersion}"
+}
+
+sourceSets {
+    test {
+        resources {
+            srcDir file('src/test/java')
+            exclude '**/*.java'
+        }
+    }
+}
+
+test {
+    useJUnitPlatform()
+    systemProperty "karate.env", System.properties.getProperty("karate.env")
+    outputs.upToDateWhen {false}
+}
