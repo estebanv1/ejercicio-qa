@@ -1,0 +1,15 @@
+Conclusiones
+
+Se validan las siguientes cualidades del servicio:
+
+- Las funcionalidades de creación y consulta por id se comportan adecuadamente en todos los escenarios de camino feliz validados.
+- La actualización de nombre y estado de mascotas también se valida exitosamente junto con el servicio de consulta por estado.
+- La funcionalidad de consulta por estado filtra los resultados correctamente.
+
+Se identifican los siguientes hallazgos:
+
+- No se manejan los errores al enviar formatos o tamaños incorrectos.
+- Es posible hacer una validación y entendimiento de la selección de los campos obligatorios y opcionales.
+- Los campos obligatorios no son controlados en el servicio.
+- Al intentar crear una mascota con un id existente, se sobreescribe el registro sin advertir esto.
+- Se reciben estados diferentes a los definidos.
