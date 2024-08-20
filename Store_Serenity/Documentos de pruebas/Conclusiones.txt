@@ -1,0 +1,13 @@
+Conclusiones:
+
+Se validan las siguientes funcionalidades del aplicativo:
+
+- Es posible agregar productos al carro de compras exitosamente.
+- Es posible realizar la orden de compra exitosamente desde el carro de compras exitosamente.
+- Se valida la posibilidad de diligenciar exitosamente el formulario de compras y completar la compra.
+- La información presentada y asociada a la compra (Monto, nombre, tarjeta) es consistente con la información ingresada y con los artículos seleccionados.
+
+Se identifican los siguientes hallazgos:
+
+- No es posible modificar la cantidad de unidades de un artículo fácilmente.
+- Se requiere más información funcional para realizar pruebas de caminos alternos, como por ejemplo, datos obligatorios, unidades máximas de artículos, información necesaria para completar la compra (Dirección por ejemplo), esquemas del frontend, etc.
